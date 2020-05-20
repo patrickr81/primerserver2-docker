@@ -1,7 +1,7 @@
 #!/bin/bash
 echo Building docker image - primerserver2:0.1
 docker build --tag  primerserver2:0.1 .
-docker run -it --name primerserver2 primerserver2:0.1
+docker run --name primerserver2 primerserver2:0.1
 echo """
 *** Image Built ***
 Hope it worked!
