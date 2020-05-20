@@ -2,13 +2,17 @@
 echo Building docker image - primerserver2:0.1
 docker build --tag  primerserver2:0.1 .
 docker run -it --name primerserver2 primerserver2:0.1
-echo *** Image Built ***
-echo Hope it worked!
-echo 
-echo To use it type:
-echo    docker exec -it primerserver2 bash
-echo
-echo To copy files to it type:
-echo    docker copy <source directory> .
-echo
-echo Good luck, you might need it.
+echo """
+*** Image Built ***
+Hope it worked!
+
+To use it type:
+    docker exec -it primerserver2 bash
+
+To copy files to it type:
+    docker copy host_source primerserver2:destination
+
+To copy files from it type:
+    docker copy primerserver2:source host_destination
+
+Good luck, you might need it.
