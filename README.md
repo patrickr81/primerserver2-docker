@@ -1,2 +1,3 @@
 # primerserver2-docker
-A docker for primerserver2
+A docker image for [primerserver2](https://github.com/billzt/PrimerServer2).
+
